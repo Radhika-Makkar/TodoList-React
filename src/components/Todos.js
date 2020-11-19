@@ -9,7 +9,7 @@ class Todos extends Component {
     }
   render()
   {
-    console.log(this.props.todos);
+    // console.log(this.props.todos);
         return this.props.todos.map((todo) =>
         (
          <Todoitem key={todo.id} todo={todo} markComplete=
@@ -22,7 +22,7 @@ Todos.propTypes={
     todos: PropTypes.array.isRequired,
 markComplete: PropTypes.func.isRequired,
     delTodo: PropTypes.func.isRequired,
-    
+
 
 }
 
